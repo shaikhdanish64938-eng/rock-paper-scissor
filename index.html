@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div id="loading-screen">
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div class="loader"></div>
+</div>
+
+<div id="home-screen">
+    <h2>ROCK PAPER SCISSORS</h2>
+    <button onclick="startGame()">PLAY</button>
+    <button onclick="showLevels()">LEVELS</button>
+    <p id="selected-level">Level: NORMAL</p>
+</div>
+
+<div id="level-screen">
+    <h2>SELECT LEVEL</h2>
+
+    <button onclick="selectLevel('easy')">EASY</button>
+    <button onclick="selectLevel('normal')">NORMAL</button>
+    <button onclick="selectLevel('hard')">HARD</button>
+
+    <button onclick="backHome()">BACK</button>
+</div>
+    <h1>Rock Peper Scissors</h1>    
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="./rock.png">
+        </div>
+        <div class="choice" id="paper">
+            <img src="./paper.png">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="./siser.png">
+        </div>
+    </div>
+
+    <div class="score-bord">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+    </div>
+     <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comuter</p>
+    </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg"> Play Your Move</p>
+    </div>
+<button id="back-home-btn" onclick="goHome()">
+    <i class="fa-solid fa-house"></i> HOME
+</button>
+
+
+    <script srC="script.js"></script>
+</body>
+</html>
