@@ -234,5 +234,11 @@ function rejectConsent() {
 }
 
 window.addEventListener("load", function () {
-    document.getElementById("consent-banner").style.display = "block";
+    const banner = document.getElementById("consent-banner");
+
+    if (localStorage.getItem("cookieConsent")) {
+        banner.style.display = "none";
+    } else {
+        banner.style.display = "block";
+    }
 });
