@@ -289,3 +289,10 @@ html, body {
 #back-home-btn:hover {
     transform: scale(1.05);
 }
+
+#game-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
