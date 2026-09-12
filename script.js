@@ -222,3 +222,19 @@ function goHome() {
     msg.innerText = "Play Your Move";
     msg.style.backgroundColor = "lightslategrey";
 }
+
+function acceptConsent() {
+    localStorage.setItem("cookieConsent", "accepted");
+    document.getElementById("consent-banner").style.display = "none";
+}
+
+function rejectConsent() {
+    localStorage.setItem("cookieConsent", "rejected");
+    document.getElementById("consent-banner").style.display = "none";
+}
+
+window.addEventListener("load", function () {
+    if (localStorage.getItem("cookieConsent")) {
+        document.getElementById("consent-banner").style.display = "none";
+    }
+});
