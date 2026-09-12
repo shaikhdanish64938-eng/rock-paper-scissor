@@ -234,7 +234,5 @@ function rejectConsent() {
 }
 
 window.addEventListener("load", function () {
-    if (localStorage.getItem("cookieConsent")) {
-        document.getElementById("consent-banner").style.display = "none";
-    }
+    document.getElementById("consent-banner").style.display = "block";
 });
